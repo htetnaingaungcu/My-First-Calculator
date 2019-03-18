@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Programmer's Calculator</title>
+	<style>
+	body {
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	#button {
+		font-size: 20px;
+		width: 60px;
+		height: 60px;
+		border-radius: 5px;
+		box-shadow: 0px 0px 30px black;
+		margin: 3px;
+		border-color: red green;
+	}
+
+	#reset {
+		color: white;
+		background-color: red;
+		font-size: 20px;
+		width: 60px;
+		height: 60px;
+		border-radius: 5px;
+		box-shadow: 0px 0px 5px white;
+		margin: 3px;
+		border-color: red green;
+	}
+	#cal {
+		color: white;
+		background-color: red;
+		font-size: 18px;
+		width: 60px;
+		height: 60px;
+		border-radius: 5px;
+		box-shadow: 0px 0px 5px white;
+		margin: 3px;
+		border-color: blue gray;
+	}
+
+	.button {
+		font-size: 20px;
+		width: 60px;
+		height: 60px;
+		border-radius: 5px;
+		margin: 3px;
+		color: white;
+		background-color: black;
+		box-shadow: 0px 0px 30px black;
+		margin: 3px;
+		border-color: red green;
+	}
+
+	#button:hover, #reset:hover, .button:hover {
+		background-color: darkred;
+	}
+
+	#display{
+		text-align: center;
+		padding: 5px;
+		margin-bottom: 20px;
+		font-size: 20px;
+		width: 27%;
+		height: 40px;
+		border-radius: 5px;
+		color: darkred;
+		box-shadow: 0px 0px 50px green;
+		border-color: red green;
+	}
+
+	fieldset {
+		width: 75%;
+		height: 500px;
+		border-radius: 10px;
+		box-shadow: 0px 0px 100px green;
+		background-color: teal, opacity:0.5;
+		background-image:url('albert einstein.jpg');
+		background-size: cover;
+		border-color: red green;
+		margin: 50px auto;
+	}
+}
+</style>
+</head>
+<body bgcolor="black">
+	<center>
+		<fieldset>
+			<br><br><br>
+			<form name="calculator">
+				<input type="text" id="display" name="shadow" readonly="readonly">
+				<br>				
+				<input type="button" id="button" value="7" onclick="calculator.shadow.value+='7'">
+				<input type="button" id="button" value="8" onclick="calculator.shadow.value+='8'">
+				<input type="button" id="button" value="9" onclick="calculator.shadow.value+='9'">&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="button" id="button" value="/" onclick="calculator.shadow.value+='/'">
+				
+				<br>
+				<input type="button" id="button" value="4" onclick="calculator.shadow.value+='4'">
+				<input type="button" id="button" value="5" onclick="calculator.shadow.value+='5'">
+				<input type="button" id="button" value="6" onclick="calculator.shadow.value+='6'">&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="button" id="button" value="x" onclick="calculator.shadow.value+='*'">
+				
+				<br>
+				<input type="button" id="button" value="1" onclick="calculator.shadow.value+='1'">
+				<input type="button" id="button" value="2" onclick="calculator.shadow.value+='2'">
+				<input type="button" id="button" value="3" onclick="calculator.shadow.value+='3'">&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="button" id="button" value="-" onclick="calculator.shadow.value+='-'">
+				<br>
+				<input type="button" id="button" value="0" onclick="calculator.shadow.value+='0'">
+				<input type="button" id="button" value="." onclick="calculator.shadow.value+='.'">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="button" id="button" value="+" onclick="calculator.shadow.value+='+'">
+				<br>
+				<input type="reset" id="cal" value="Clear" onclick="calculator.shadow.value+=">
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="button" id="reset" value="=" onclick="calculator.shadow.value=eval(calculator.shadow.value)">
+				
+				
+				<!-- <input type="button" id="button" value=">" onclick="calculator.shadow.value+='>'">
+				
+				<input type="button" id="button" value="^" onclick="calculator.shadow.value+='^'">
+				
+				<input type="button" id="button" value="<" onclick="calculator.shadow.value+='<'"> -->
+
+				
+				
+				<!-- <input type="button" id="button" value=">=" onclick="calculator.shadow.value+='>='">
+				<input type="button" id="button" value="===" onclick="calculator.shadow.value+='==='">
+				<br> -->
+				
+				
+				
+				
+				<!-- <input type="button" id="button" value="<=" onclick="calculator.shadow.value+='<='"> -->
+				<!-- <input type="button" id="button" value="%" onclick="calculator.shadow.value+='%'"> -->
+			</form>
+		</fieldset>
+	</center>
+</body>
+</html>
